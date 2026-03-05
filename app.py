@@ -1,3 +1,4 @@
+import download_models  
 from flask import Flask, request, jsonify
 import ai_pipeline
 
@@ -24,4 +25,5 @@ def predict():
     return jsonify({"success": True, "result": result})
 
 if __name__ == "__main__":
+
     app.run()
